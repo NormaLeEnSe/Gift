@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: backgroundAnimation 20s linear infinite alternate-reverse;
+}
+
+.container-fluid {
+    margin-top: 20px; 
+}
+
+.mensaje {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7c4e9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; 
+}
+
+#sobre {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    background-color: #C71585;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#sobre:hover {
+    background-color: #FF69B4; 
+    transform: scale(1.05); 
+}
+
+#sobre p {
+    margin: 0;
+}
+.oculto {
+    display: none;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(45deg, #FFB6C1, #DA70D6);
+    }
+    100% {
+        background: linear-gradient(45deg, #DA70D6, #FFB6C1);
+    }
+}
